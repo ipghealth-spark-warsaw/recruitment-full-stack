@@ -16,14 +16,11 @@ export class Task {
   @PrimaryGeneratedColumn()
   id: number;
 
-  // @TODO: add title
+  // TODO: add title
 
-  // @TODO: add description
+  // TODO: add description
 
-  @Column({
-    type: "varchar",
-    default: TaskStatus.TODO,
-  })
+  @Column({ type: "varchar", default: TaskStatus.TODO })
   status: TaskStatus;
 
   @CreateDateColumn()
